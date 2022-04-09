@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #000;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -465,6 +465,11 @@ section {
 .section-title {
   padding-bottom: 40px;
 }
+
+.section-title-1 {
+  padding-bottom: 40px;
+}
+
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
@@ -476,6 +481,19 @@ section {
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
+
+.section-title-1 h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 50%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
 .section-title h2::after {
   content: "";
   width: 120px;
@@ -494,6 +512,15 @@ section {
   color: #e50b0bc7;
 }
 
+.section-title-1 p {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #e50b0bc7;
+  margin: 0 0 0 30%;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -510,8 +537,19 @@ section {
   width: 100%;
   height: 30%;
   background: linear-gradient(25deg, rgba(190,42,35,0.711922268907563) 0%, rgba(228,40,40,0.773546918767507) 37%, rgba(255,17,17,1) 100%);
-  transform-origin: bottom right;
-  transform: skew(85deg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(25deg, rgba(190,42,35,0.711922268907563) 0%, rgba(228,40,40,0.773546918767507) 37%, rgba(255,17,17,1) 100%);
+  clip-path: polygon(0 0, 100% 100%, 100% 100%, 0 100%);
+  z-index: -10;
 }
 
 .about .content h3 {
@@ -616,7 +654,7 @@ section {
   transition: 0.3s;
 }
 .services .icon-box .icon i {
-  color: #151515;
+  color: #db3d3dc7;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -637,7 +675,11 @@ section {
   font-size: 14px;
   margin-bottom: 0;
 }
-.services .icon-box:hover {
+
+.services .icon-box .icon i:hover {
+  color: #fff;
+}
+.services .icon-box:hover  {
   background: linear-gradient(25deg, rgba(190,42,35,0.711922268907563) 0%, rgba(228,40,40,0.773546918767507) 37%, rgba(255,17,17,1) 100%);
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
@@ -1806,6 +1848,18 @@ ul li.price {
 }
 
 
+.shap {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, rgba(190,42,35,0.711922268907563) 0%, rgba(228,40,40,0.773546918767507) 37%, rgba(255,17,17,1) 100%);
+  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 55%);
+  clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 55%);
+  position: relative;
+  left: 46%;
+  top: 20px;
+}
+
+
 
 @media screen and (max-width: 600px) {
   
@@ -1840,5 +1894,22 @@ ul li.price {
 .banner-form .php-email-form {
   width: 80%;
   margin-left: 30px;
+}
+
+.section-title-1 p {
+  margin: 6% 0 0 18%;
+  font-size: 18px;
+}
+
+.shap {
+  left: 32%;
+}
+
+.section-title-1 h2 {
+  margin: 0 0 5px 44%;
+}
+
+#header.header-scrolled .mobile-nav-toggle {
+  color: #fff;
 }
 }
