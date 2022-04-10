@@ -1930,10 +1930,12 @@ ul li.price {
 }
 
 .phone i {
-  bottom: 200px;
+  bottom: 135px;
+  font-size: 60px;
 }
 
 .whats i {
-  bottom: 150px;
+  bottom: 52px;
+  font-size: 60px;
 }
 }
