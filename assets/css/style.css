@@ -518,7 +518,7 @@ section {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #e50b0bc7;
-  margin: 0 0 0 30%;
+  margin: 0 0 0 19%;
 }
 
 /*--------------------------------------------------------------
@@ -1472,7 +1472,7 @@ section {
   border-radius: 4em;
   font-size: 16px;
   color: white;
-  padding: 15px 134px;
+  padding: 15px 112px;
   top: 33px;
   left: 106px;
   cursor:pointer;
@@ -1755,7 +1755,7 @@ ul li.price {
   padding: 10px 13px;
   border-radius: 10px;
   color: #e50b0bc7;
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .banner-form .php-email-form {
@@ -1859,6 +1859,22 @@ ul li.price {
   top: 20px;
 }
 
+.phone i {
+  position: fixed;
+  color: #413ef1;
+  bottom: 100px;
+  left: 20px;
+  font-size: 38px;
+}
+
+.whats i {
+  position: fixed;
+  color: green;
+  bottom: 50px;
+  font-size: 38px;
+  left: 20px;
+}
+
 
 
 @media screen and (max-width: 600px) {
@@ -1911,5 +1927,13 @@ ul li.price {
 
 #header.header-scrolled .mobile-nav-toggle {
   color: #fff;
+}
+
+.phone i {
+  bottom: 200px;
+}
+
+.whats i {
+  bottom: 150px;
 }
 }
