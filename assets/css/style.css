@@ -288,6 +288,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
+
+.mobile-nav-toggle:focus {
+  color: fff;
+}
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -330,6 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   color: #151515;
 }
+
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #151515;
   background-color: #ffc451;
@@ -1938,4 +1944,8 @@ ul li.price {
   bottom: 52px;
   font-size: 60px;
 }
+}
+
+#header.header-scrolled .navbar a {
+  color: #000;
 }
