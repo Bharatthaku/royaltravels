@@ -1865,7 +1865,7 @@ ul li.price {
   top: 20px;
 }
 
-.phone i {
+.phn i {
   position: fixed;
   color: #413ef1;
   bottom: 100px;
@@ -1879,6 +1879,14 @@ ul li.price {
   bottom: 50px;
   font-size: 38px;
   left: 20px;
+}
+
+.msg i {
+  position: fixed;
+  color: rgb(168, 158, 158);
+  bottom: 5px;
+  left: 20px;
+  font-size: 34px;
 }
 
 
@@ -1935,17 +1943,21 @@ ul li.price {
   color: #fff;
 }
 
-.phone i {
+.phn i {
   bottom: 135px;
   font-size: 60px;
 }
 
 .whats i {
-  bottom: 52px;
+  bottom: 56px;
   font-size: 60px;
 }
+
+.msg i {
+  font-size: 50px;
 }
 
 #header.header-scrolled .navbar a {
   color: #000;
+}
 }

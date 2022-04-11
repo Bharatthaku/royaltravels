@@ -302,7 +302,7 @@ const master = document.getElementById("master");
 const basic = document.getElementById("basic");
 
 checkbox.addEventListener("click", () => {
-  basic.textContent = basic.textContent === "$199.99" ? "$19.99" : "$199.99";
+  basic.textContent = basic.textContent === "$199.99" ? "Rs9/Km" : "$199.99";
   professional.textContent =
     professional.textContent === "$249.99" ? "$24.99 " : "$249.99";
   master.textContent = master.textContent === "$399.99" ? "13/Km" : "$399.99";

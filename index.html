@@ -73,7 +73,15 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="date" class="form-control" name="subject" id="subject" placeholder="Pickup date" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Pickup date" onfocus="(this.type='date')" required>
+              </div>
+              <div class="form-group mt-3">
+                <select name="cars" id="cars" class="form-control">
+                  <option value="none"selected disabled hidden>Choose a car</option>
+                  <option value="sedan">Sedan</option>
+                  <option value="mini">Mini Suv</option>
+                  <option value="suv">Suv</option>
+                </select>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
@@ -180,22 +188,22 @@
           <div class="pricing" data-aos="fade-right">
             <h1>Our Pricing</h1>
               <div class="toggle">
-                <label>Annually </label>
+                <label>One Way </label>
                 <div class="toggle-btn">
                   <input type="checkbox" class="checkbox" id="checkbox" />
                   <label class="sub" id="sub" for="checkbox">
                     <div class="circle"></div>
                   </label>
                 </div>
-                  <label> Monthly</label>
+                  <label>Tow Way</label>
               </div>
           </div>
 
           <div class="cards">
     <div class="card-1 shadow">
       <ul>
-        <li class="pack">Hatchback</li>
-        <li id="basic" class="price bottom-bar">&#8377;9/Km</li>
+        <li class="pack">Sedan</li>
+        <li id="basic" class="price bottom-bar">3499/Rs</li>
         <li class="bottom-bar">2 Bags</li>
         <li class="bottom-bar">3-4 Persons</li>
         <li class="bottom-bar">Wagon-R or Equivalent</li>
@@ -204,8 +212,8 @@
     </div>
     <div class="card-1 active">
       <ul>
-        <li class="pack">Sedan</li>
-        <li id="professional" class="price bottom-bar">&#8377;10/Km</li>
+        <li class="pack">Suv</li>
+        <li id="professional" class="price bottom-bar">4499/Rs</li>
         <li class="bottom-bar">3 Bags</li>
         <li class="bottom-bar">3-4 Persons</li>
         <li class="bottom-bar">Xcent or Equivalent</li>
@@ -214,8 +222,8 @@
     </div>
     <div class="card-1 shadow">
       <ul>
-        <li class="pack">SUVr</li>
-        <li id="master" class="price bottom-bar">&#8377;13/Km</li>
+        <li class="pack">Mini SUV</li>
+        <li id="master" class="price bottom-bar">3999/Rs</li>
         <li class="bottom-bar">4 Bags</li>
         <li class="bottom-bar">3-4 Persons</li>
         <li class="bottom-bar">Ertiga or Equivalent</li>
@@ -287,46 +295,40 @@
         </div>
         <div class="row routes">
           <div class="col-md-3 route">
-            <a href="http://">Ahmedabad to Mumbai</a>
+            <a href="http://">Surat to Mumbai</a>
           </div>
           <div class="col-md-3 route">
+          <a href="http://">Surat to Ahmedabadt</a>
+          </div>
+          <div class="col-md-3 route">
+          <a href="http://">Baroda to Munbai</a>
+          </div>
+          <div class="col-md-3 route">
+          <a href="http://">Mumbai to Baroda</a>
+          </div>
+        </div>
+
+        <div class="row routes">
+          <div class="col-md-3 route">
           <a href="http://">Ahmedabad to Surat</a>
+          </div>
+          <div class="col-md-3 route">
+          <a href="http://">Ahmedabad to Mumbai</a>
           </div>
           <div class="col-md-3 route">
           <a href="http://">Ahmedabad to Pune</a>
           </div>
           <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Rajkot</a>
+          <a href="http://">Pune to Surat</a>
           </div>
         </div>
 
         <div class="row routes">
           <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
+          <a href="http://">Pune to Baroda</a>
           </div>
           <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
-          </div>
-          <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
-          </div>
-          <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
-          </div>
-        </div>
-
-        <div class="row routes">
-          <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
-          </div>
-          <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
-          </div>
-          <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
-          </div>
-          <div class="col-md-3 route">
-          <a href="http://">Ahmedabad to Mumbai</a>
+          <a href="http://">Pune to Ahmedabad</a>
           </div>
         </div>
 
@@ -377,19 +379,28 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Pickup Location" required>
                 </div>
-                <div class="form-group mt-3">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="form-group mt-2">
+                  <input type="text" class="form-control" name="textl" id="email" placeholder="Drop Location" required>
                 </div>
               
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <div class="form-group mt-2">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Pickup date" onfocus="(this.type='date')" required>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="message" placeholder="Message" required>
+              <div class="form-group mt-2">
+                <select name="cars" id="cars" class="form-control">
+                  <option value="none"selected disabled hidden>Choose a car</option>
+                  <option value="sedan">Sedan</option>
+                  <option value="mini">Mini Suv</option>
+                  <option value="suv">Suv</option>
+                </select>
               </div>
-              <div class="my-3">
+              
+              <div class="form-group mt-2">
+                <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
+              </div>
+              <div class="my-2">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
@@ -476,13 +487,18 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-  <div class="phone">
-    <a href="tel:9081111040"><i class="fas fa-phone-square"></i></a>
-  </div>
 
-  <div class="whats">
-    <a href="https://wa.me/919081111040?text=hello"><i class="fab fa-whatsapp-square"></i></a>
-  </div>
+    <div class="whats">
+      <a href="https://wa.me/919081111040?text=hello"><i class="fab fa-whatsapp-square"></i></a>
+    </div>
+
+    <div class="msg">
+      <a href="sms:(+91)(9081111040)"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <div class="phn">
+      <a href="tel:9081111040"><i class="fas fa-phone-square"></i></a>
+    </div>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
