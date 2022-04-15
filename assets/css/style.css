@@ -893,6 +893,7 @@ section {
 .counts .content {
   padding: 31px 80px;
   background: lightcyan;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .counts .content h3 {
   font-weight: 700;
@@ -1122,6 +1123,78 @@ section {
 .team .member:hover .social {
   opacity: 1;
   bottom: 15px;
+}
+
+.special-card {
+  display: grid;
+  column-gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.special-heading h1 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+.special-heading span {
+  color: #e50b0bc7;
+}
+
+.special-text {
+  position: relative;
+  background: #000;
+  text-align: center;
+  padding: 30px 26px;
+  margin: 0 125px;
+  border-radius: 20px;
+}
+
+.special-icon i {
+  position: absolute;
+  top: -30px;
+  left: 137px;
+  color: #fff;
+  font-size: 30px;
+  background: #000;
+  padding: 20px;
+  border-radius: 50%;
+  
+}
+
+.special-text h1 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.special-text h5 {
+  font-size: 20px;
+  padding: 20px 0;
+  color: gray;
+}
+
+.special-text ul li {
+  list-style: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.special-text ul li span {
+  color: #e50b0bc7;
+  margin-right: 10px;
+}
+
+.special-text .sp-btn a {
+  margin-bottom: 30px;
+  color: antiquewhite;
+  background:#e50b0bc7;
+  padding: 10px 10px;
+  font-weight: 700;
+  border-radius: 8px;
 }
 
 /*--------------------------------------------------------------
@@ -1943,21 +2016,44 @@ ul li.price {
   color: #fff;
 }
 
+.fixed-icon {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  bottom: 1px;
+  background: linear-gradient(25deg, rgba(190,42,35,0.711922268907563) 0%, rgba(228,40,40,0.773546918767507) 37%, rgba(255,17,17,1) 100%);
+  width: 100vw;
+  padding: 10px;
+  justify-content: space-around;
+}
+
 .phn i {
-  bottom: 135px;
-  font-size: 60px;
+ position: relative; 
+ left: 0;
+ bottom: 0;
+ font-size: 50px;
 }
 
 .whats i {
-  bottom: 56px;
-  font-size: 60px;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 50px;
 }
 
 .msg i {
+  position: relative;
+  left: 0;
+  bottom: 0;
   font-size: 50px;
 }
 
 #header.header-scrolled .navbar a {
   color: #000;
+}
+
+.special-text {
+  margin: 0 29px;
+  margin-bottom: 50px;
 }
 }
